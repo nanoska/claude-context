@@ -43,6 +43,12 @@ Este directorio contiene documentación estándar y templates para inicializar y
 1. `07-DIAGRAM-FORMATTING.md` - Estándares de diagramas y visualización
 2. `05-BEST-PRACTICES.md` - Complementar con prácticas específicas
 
+### Escenario 6: Usar Herramientas y Scripts
+
+**Orden de lectura:**
+1. `08-TOOLS.md` - Documentación de herramientas disponibles
+2. Ejecutar scripts desde `tools/` según necesidad
+
 ## 📁 Estructura de Archivos
 
 ```
@@ -55,12 +61,15 @@ context/
 ├── 05-BEST-PRACTICES.md                 # Django, FastAPI, React, Security
 ├── 06-AI-AGENT-OPTIMIZATION.md          # Optimización de tokens
 ├── 07-DIAGRAM-FORMATTING.md             # Estándares de visualización
-└── templates/                           # Templates y scripts
-    ├── init-project.sh                  # Bootstrap automático
-    ├── verify-scope.sh                  # Validación de alcance
-    ├── CLAUDE.md.*.template             # Templates por worktree
-    ├── docker-compose.*.yml             # Docker templates
-    └── .env.example                     # Variables de entorno
+├── 08-TOOLS.md                          # Herramientas y utilidades
+├── templates/                           # Templates y scripts
+│   ├── init-project.sh                  # Bootstrap automático
+│   ├── verify-scope.sh                  # Validación de alcance
+│   ├── CLAUDE.md.*.template             # Templates por worktree
+│   ├── docker-compose.*.yml             # Docker templates
+│   └── .env.example                     # Variables de entorno
+└── tools/                               # Scripts de utilidades
+    └── excel_to_csv.py                  # Convertir Excel a CSV
 ```
 
 ## 🔑 Archivos Más Importantes
@@ -72,6 +81,7 @@ context/
 | `03-WORKTREE-SYSTEM.md` | Setup de worktrees | 600 |
 | `04-SCOPE-POLICY.md` | Antes de acceder a archivos | 400 |
 | `07-DIAGRAM-FORMATTING.md` | Al crear documentación | 900 |
+| `08-TOOLS.md` | Al usar herramientas/scripts | 600 |
 | `CLAUDE.md` (worktree) | Al empezar sesión | 200 |
 
 **Total para iniciar:** ~1500 tokens (vs 5000+ sin context/)
